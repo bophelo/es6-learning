@@ -1,5 +1,3 @@
-'use strict';
-
 //Object shorthand
 //Method shorthand
 //Object destructuring

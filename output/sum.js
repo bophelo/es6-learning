@@ -1,5 +1,3 @@
-"use strict";
-
 //Scenario: Accepting any number of arguments
 //Rest parameters take all the rest of the arguments and make them an array
 function sum() {

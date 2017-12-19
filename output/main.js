@@ -1,5 +1,3 @@
-'use strict';
-
 function fire(bool) {
     //var foo;
     //let and const are block level declarations {}

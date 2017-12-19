@@ -1,9 +1,3 @@
-'use strict';
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 //create a constructor
 /*function User(username, email) {
     //assign attributes to it
@@ -30,7 +24,7 @@ console.dir(user);*/
 //es6 
 var User = function () {
     function User(username, email) {
-        _classCallCheck(this, User);
+        babelHelpers.classCallCheck(this, User);
 
         this.username = username;
         this.email = email;
@@ -39,7 +33,7 @@ var User = function () {
     //this method is only callable directly of the user object, i.e cannot be referenced in an instance method like changeEmail
 
 
-    _createClass(User, [{
+    babelHelpers.createClass(User, [{
         key: 'changeEmail',
 
 
@@ -60,7 +54,6 @@ var User = function () {
             return new (Function.prototype.bind.apply(User, [null].concat(args)))(); //spread operator, instead of duplicating the argument list
         }
     }]);
-
     return User;
 }();
 
@@ -81,16 +74,15 @@ function log(strategy) {
 
 var ConsoleLogger = function () {
     function ConsoleLogger() {
-        _classCallCheck(this, ConsoleLogger);
+        babelHelpers.classCallCheck(this, ConsoleLogger);
     }
 
-    _createClass(ConsoleLogger, [{
+    babelHelpers.createClass(ConsoleLogger, [{
         key: 'handle',
         value: function handle() {
             console.log('Using the console strategy to log.');
         }
     }]);
-
     return ConsoleLogger;
 }();
 

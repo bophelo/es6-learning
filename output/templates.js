@@ -1,5 +1,3 @@
-'use strict';
-
 //replace array with back ticks
 //Foo is dynamic
 var name = 'Bar';

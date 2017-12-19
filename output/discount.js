@@ -1,5 +1,3 @@
-"use strict";
-
 //applying a defautl parameter e.g if one does not provide a discount automatically use 10%
 //es6
 function defaultDiscountRate(params) {
